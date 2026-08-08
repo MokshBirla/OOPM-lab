@@ -1,3 +1,5 @@
+//Method -- 1
+
 #include<iostream>
 using namespace std;
 void shiftzeros(int arr[], int n) {
@@ -23,6 +25,33 @@ void shiftzeros(int arr[], int n) {
 }
 
 int main() {
+    int arr[] = {1, 2, 6, 0, 0, 43, 0, 5};
+    shiftzeros(arr, 8);
+}
+
+
+// Method --2 
+
+#include<iostream>
+using namespace std;
+void shiftzeros(int arr[], int n) {
+    int j=0;
+    for(int i=0; i < n; i++) {
+        if (arr[i]!=0) {
+            arr[j]=arr[i];
+            j++;
+        }
+    }
+    while (j < n) {
+        arr[j] = 0;
+        j++;
+    }
+    for (int i=0; i < n; i++) {
+        cout<<arr[i]<<" ";
+    }   
+} 
+
+int main () {
     int arr[] = {1, 2, 6, 0, 0, 43, 0, 5};
     shiftzeros(arr, 8);
 }
