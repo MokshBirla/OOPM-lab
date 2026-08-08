@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 void shiftzeros(int arr[], int n) {
-    for (int i = 0; i < n; i++) { //Check for the Zeros in array
+    for (int i = 0; i < n; i++) {           //Check for the Zeros in array
         if (arr[i] != 0) {
             continue;
         }
